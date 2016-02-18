@@ -1,58 +1,6 @@
-doctype html
-html(lang="en")
-  head
-    meta(charset="utf-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1")
-    title Wobscale Technologies - Services - Server Colocation
-    link(rel="stylesheet",href="/css/bootstrap.min.css")
-    link(rel="stylesheet",href="/css/tether.min.css")
-    style
-      | /* TODO, probably a file? */
-      | html {
-      |   height: 100%;
-      | }
-      | body {
-      |   padding-top: 5rem;
-      |   height: 100%;
-      |   color: #eaeaea;
-      | }
-      | h1,h2,h3,h4 {
-      |   text-align: center;
-      | }
-      | .outer-container {
-      |   height: 100%;
-      |   display: flex;
-      |   flex-direction: column;
-      | }
-      | pre {
-      |   color: #eaeaea;
-      | }
-      | nav {
-      |   background-color: transparent;
-      | }
-      | body {
-      |   background-color: #959595;
-      |   background-image: linear-gradient(#959595, #151515);
-      |  /* TODO, we could have much fancier graphice */
-      | }
-  body
-    .container.outer-container
-      nav.navbar.navbar-fixed-top.navbar-dark
-        button.navbar-toggler.hidden-sm-up(type="button",data-toggle="collapse",data-target="#topnav",aria-controls="topnav") &#9776;
-        #topnav.collapse.navbar-toggleable-xs
-          a.navbar-brand(href="/") Wobscale Technologies, LLC
-          ul.nav.navbar-nav.pull-xs-right
-            li.nav-item: a.nav-link(href="/") Home
-            li.nav-item: a.nav-link(href="/about.html") About
-            li.nav-item.active.dropdown
-              a.nav-link.dropdown-toggle(href="#",data-toggle="dropdown",role="button",aria-haspopup="true",aria-expanded="false") Services&nbsp;
-              .dropdown-menu
-                a.dropdown-item(href="/services/colocation.html") Server Colocation
-            li.nav-item: a.nav-link(href="/contact.html") Contact Us
-      .container-fluid
-        .maincontent
-          h1 Server Colocation
-          p: b Coming Soon!
-    script(src="/js/tether.min.js")
-    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
-    script(src="/js/bootstrap.min.js")
+- var title = "Services - Server Colocation"
+extends ../templates/template.jade
+
+block content
+  h1 Server Colocation
+  p: b Coming Soon!

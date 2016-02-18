@@ -1,10 +1,18 @@
 var gulp = require('gulp'),
-    jade = require('gulp-jade');
+    jade = require('gulp-jade'),
+    data = require('gulp-data');
 
 gulp.task('jade', function() {
-  gulp.src('**/*.jade')
-    .pipe(jade({}))
+  gulp.src(['**/*.jade', '!./templates/*.jade'])
+    .pipe(data(function(file) {
+      return {file: file.clone()};
+    }))
+    .pipe(jade())
     .pipe(gulp.dest('./_site'));
+});
+
+gulp.task('css', function() {
+  gulp.src('css/*').pipe(gulp.dest('./_site/css'));
 });
 
 gulp.task('bootstrap', ['tether'], function() {
@@ -17,7 +25,7 @@ gulp.task('tether', function() {
   gulp.src('./bower_components/tether/dist/css/tether.min.css').pipe(gulp.dest('./_site/css'));
 });
 
-gulp.task('build', ['jade', 'bootstrap']);
+gulp.task('build', ['jade', 'bootstrap', 'css']);
 
 gulp.task('watch', function() {
   gulp.watch('**/*.jade', ['jade']);
