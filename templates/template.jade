@@ -1,3 +1,5 @@
+// Because of jade's kinda messy scoping rules, it's convenient to be able to inject things into the scope of a template.
+// This block provides a hook for an 'extender' to shove in variables. use it via `prepend vars: - var foo = bar`
 block vars
 
 doctype html
