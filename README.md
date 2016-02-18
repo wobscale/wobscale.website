@@ -1,4 +1,4 @@
-# the Wobscale.technology webbersite
+# the Wobscale.website webbersite
 
 ## Bootstrap
 
