@@ -1,0 +1,65 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Wobscale Technologies - About
+    link(rel="stylesheet",href="/css/bootstrap.min.css")
+    link(rel="stylesheet",href="/css/tether.min.css")
+    style
+      | /* TODO, probably a file? */
+      | html {
+      |   height: 100%;
+      | }
+      | body {
+      |   padding-top: 5rem;
+      |   height: 100%;
+      |   color: #eaeaea;
+      | }
+      | h1,h2,h3,h4 {
+      |   text-align: center;
+      | }
+      | .outer-container {
+      |   height: 100%;
+      |   display: flex;
+      |   flex-direction: column;
+      | }
+      | pre {
+      |   color: #eaeaea;
+      | }
+      | nav {
+      |   background-color: transparent;
+      | }
+      | body {
+      |   background-color: #959595;
+      |   background-image: linear-gradient(#959595, #151515);
+      |  /* TODO, we could have much fancier graphice */
+      | }
+  body
+    .container.outer-container
+      nav.navbar.navbar-fixed-top.navbar-dark
+        button.navbar-toggler.hidden-sm-up(type="button",data-toggle="collapse",data-target="#topnav",aria-controls="topnav") &#9776;
+        #topnav.collapse.navbar-toggleable-xs
+          a.navbar-brand(href="/") Wobscale Technologies, LLC
+          ul.nav.navbar-nav.pull-xs-right
+            li.nav-item: a.nav-link(href="/") Home
+            li.nav-item.active: a.nav-link(href="/about.html") About
+            li.nav-item.dropdown
+              a.nav-link.dropdown-toggle(href="#",data-toggle="dropdown",role="button",aria-haspopup="true",aria-expanded="false") Services&nbsp;
+              .dropdown-menu
+                a.dropdown-item(href="/services/colocation.html") Server Colocation
+            li.nav-item: a.nav-link(href="/contact.html") Contact Us
+      .container-fluid
+        .maincontent
+          h1 About
+          h3 Wobscale &mdash; the Term
+          p <i>Wobscale</i> is a corruption of the term <i>Webscale</i>. <i>Webscale</i>, much like <i>The Cloud</i>, is a vague buzzword for modern technology. By corrupting the term, we hope to poke fun at it. Also, it just rolls off the tongue and sounds great!
+          h3 Wobscale &mdash; the Team
+          p
+            | First and foremost, we're a bunch of internet friends trying to have a good time. We're not trying to make hoards of cash nor do we think we'll create anything world-shattering. We're trying to have fun and learn things. <br>
+            | That being said, we're also not <i>just</i> a joke. Our <a href="/services.html">Services</a> will be run to the best of our ability. We'll be accountable for our actions and obligations. You can trust us :)
+          h3 Wobscale Technologies &mdash; the LLC
+          p Wobscale Technologies, LLC is an LLC created by the Wobscale Team. It's registered in the state of Washington. Our ASIN is xyz.
+    script(src="/js/tether.min.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+    script(src="/js/bootstrap.min.js")

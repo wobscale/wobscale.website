@@ -1,0 +1,25 @@
+{
+  "name": "wobscale.website-site",
+  "version": "0.0.1",
+  "description": "the Wobscale.website domain build stuffs",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
+    "jade": "^1.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wobscale/wobscale.website.git"
+  },
+  "author": "Wobscale Technologies, LLC and others",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/wobscale/wobscale.website/issues"
+  },
+  "homepage": "https://github.com/wobscale/wobscale.website#readme"
+}

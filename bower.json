@@ -1,0 +1,23 @@
+{
+  "name": "wobscale.website-site",
+  "description": "the Wobscale.website domain build stuffs",
+  "main": "index.js",
+  "authors": [
+    "Wobscale Technologies",
+    "LLC and others"
+  ],
+  "license": "Apache-2.0",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "tether": "^1.1.1"
+  }
+}
