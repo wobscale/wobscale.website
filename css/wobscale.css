@@ -29,6 +29,20 @@ body {
  /* TODO, we could have much fancier graphice */
 }
 
-a {
+/* TODO, this btn stuff is icky */
+.maincontent a:not(.btn) {
   color: #afcfff;
+}
+
+.maincontent a:visited:not(.btn) {
+  color: #dfafdf;
+}
+
+.maincontent a:hover:not(.btn) {
+  color: #8fcfff;
+}
+
+
+.maincontent a:active:not(.btn) {
+  color: #4fcfff;
 }
