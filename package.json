@@ -5,6 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "gulp": "^3.9.1",
+    "gulp-awspublish": "^3.0.1",
+    "gulp-cloudfront-invalidate-aws-publish": "0.0.1",
     "gulp-data": "^1.2.1",
     "gulp-jade": "^1.1.0",
     "gulp-tap": "^0.1.3",
