@@ -13,6 +13,10 @@ gulp.task('jade', function() {
     .pipe(gulp.dest('./_site'));
 });
 
+gulp.task('favicon', function() {
+  gulp.src('./favicon.*').pipe(gulp.dest('./_site'));
+});
+
 gulp.task('css', function() {
   gulp.src('css/*').pipe(gulp.dest('./_site/css'));
 });
@@ -27,11 +31,12 @@ gulp.task('tether', function() {
   gulp.src('./bower_components/tether/dist/css/tether.min.css').pipe(gulp.dest('./_site/css'));
 });
 
-gulp.task('build', ['jade', 'bootstrap', 'css']);
+gulp.task('build', ['jade', 'bootstrap', 'css', 'favicon']);
 
 gulp.task('watch', function() {
   gulp.watch('**/*.jade', ['jade']);
   gulp.watch('css/*', ['css']);
+  gulp.watch('./favicon.*', ['favicon']);
 });
 
 gulp.task('default', ['build']);
