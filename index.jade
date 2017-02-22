@@ -1,9 +1,8 @@
-- var title = "Home";
-// Shove into the template due to scoping stuff
-prepend vars
-  - var extraCss = "landing-page";
-
 extends ./templates/template.jade
+
+block vars
+  - var title = "Home";
+  - var extraCss = "landing-page";
 
 block content
   h1 Wobscale Technologies, LLC
