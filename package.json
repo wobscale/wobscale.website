@@ -4,13 +4,13 @@
   "description": "the Wobscale.website domain build stuffs",
   "main": "index.js",
   "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-awspublish": "^3.0.1",
-    "gulp-cloudfront-invalidate-aws-publish": "0.0.1",
-    "gulp-data": "^1.2.1",
-    "gulp-jade": "^1.1.0",
-    "gulp-tap": "^0.1.3",
-    "jade": "^1.11.0"
+    "gulp": "*",
+    "gulp-awspublish": "*",
+    "gulp-cloudfront-invalidate-aws-publish": "*",
+    "gulp-data": "*",
+    "gulp-pug": "^3.2.0",
+    "gulp-tap": "*",
+    "pug": "^2.0.0-beta11"
   },
   "devDependencies": {},
   "scripts": {
