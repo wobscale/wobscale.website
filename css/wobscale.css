@@ -2,6 +2,7 @@ html {
   height: 100%;
 }
 body {
+  font-family: 'Montserrat', sans-serif;
   padding-top: 5rem;
   height: 100%;
   color: #eaeaea;
@@ -23,6 +24,11 @@ body {
 nav {
   background-color: transparent;
 }
+
+.navbar-brand, .logo {
+  font-family: 'Rubik', sans-serif;
+}
+
 body {
   background-color: #555;
   background-image: linear-gradient(#555, #222);

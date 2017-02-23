@@ -1,12 +1,11 @@
-- var title = "Home";
-// Shove into the template due to scoping stuff
-prepend vars
-  - var extraCss = "landing-page";
-
 extends ./templates/template.jade
 
+block vars
+  - var title = "Home";
+  - var extraCss = "landing-page";
+
 block content
-  h1 Wobscale Technologies, LLC
+  h1.logo Wobscale Technologies, LLC
   h2 Scaling the Wob has never been so important
   // White button looks kinda odd tbh; maybe something else? TODO
   a.btn.btn-lg.btn-secondary(role="button",href="/about.html") About Us

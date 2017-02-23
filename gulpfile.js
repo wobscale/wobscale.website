@@ -1,15 +1,16 @@
 var gulp       = require('gulp'),
-    jade       = require('gulp-jade'),
+    pug        = require('gulp-pug'),
     data       = require('gulp-data'),
     awspublish = require('gulp-awspublish'),
     cloudfront = require('gulp-cloudfront-invalidate-aws-publish');
 
-gulp.task('jade', function() {
-  gulp.src(['**/*.jade', '!./templates/*.jade'])
+gulp.task('pug', function() {
+  gulp.src(['**/*.jade', '!./templates/*.jade', '!./node_modules/**'])
     .pipe(data(function(file) {
+      console.log("processing " + file.history[0]);
       return {file: file.clone()};
     }))
-    .pipe(jade())
+    .pipe(pug())
     .pipe(gulp.dest('./_site'));
 });
 
@@ -31,10 +32,10 @@ gulp.task('tether', function() {
   gulp.src('./bower_components/tether/dist/css/tether.min.css').pipe(gulp.dest('./_site/css'));
 });
 
-gulp.task('build', ['jade', 'bootstrap', 'css', 'favicon']);
+gulp.task('build', ['pug', 'bootstrap', 'css', 'favicon']);
 
 gulp.task('watch', function() {
-  gulp.watch('**/*.jade', ['jade']);
+  gulp.watch('**/*.jade', ['pug']);
   gulp.watch('css/*', ['css']);
   gulp.watch('./favicon.*', ['favicon']);
 });
