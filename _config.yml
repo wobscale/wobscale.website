@@ -1,0 +1,8 @@
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+kramdown:
+  show_warnings: true
+  parse_block_html: true
