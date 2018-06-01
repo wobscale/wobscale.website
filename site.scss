@@ -1,0 +1,58 @@
+---
+---
+
+body {
+    max-width: 70ch;
+    margin: 5em auto;
+    font-size: 14pt;
+    line-height: 1.5714;
+    font-family: "Lato", sans-serif;
+    font-variant-ligatures: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: underline;
+    color: rgb(0, 98, 155);
+}
+
+header {
+    h1 a img {
+        display: block;
+        width: 232px;
+        height: 39px;
+    }
+
+    .slogan {
+        font-family: "Rubik", sans-serif;
+        font-size: larger;
+    }
+}
+
+dl {
+    dt {
+        font-weight: bold;
+        display: inline-block;
+        min-width: 10ch;
+    }
+
+    dd {
+        display: inline;
+        margin: 0;
+
+        &:after {
+            display: block;
+            content: '';
+            margin-bottom: .75em;
+        }
+    }
+}
+
+footer {
+    font-size: smaller;
+    margin-top: 2rem;
+}
