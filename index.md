@@ -5,7 +5,7 @@ Wobscale is a Seattle-based creative technology collective. We defy simple expla
 
 We exist partially to poke fun at the industry, but also as a front for an eclectic collection of projects. We explicitly eschew making money in favor of having fun and working on things we care about.
 
-Join us on IRC at [#wob on irc.wobscale.website](ircs://irc.wobscale.website:6697/wob) or via our Matrix bridge at [#wob:wobscale.chat](https://matrix.to/#/#wob:wobscale.chat). **Participation is subject to our [code of conduct](/conduct.html).**
+Join us on IRC at [#wob on irc.wobscale.website](ircs://irc.wobscale.website:6697/wob) or via our Matrix bridge at [#wob:wobscale.chat](https://matrix.to/#/#wob:wobscale.chat). **Participation is subject to our [code of conduct](conduct.html).**
 
 We're on Mastodon at [@wobscale@wobscale.social](https://wobscale.social/@wobscale).
 
