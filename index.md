@@ -1,7 +1,9 @@
 ---
 ---
 
-Wobscale is a Seattle-based creative technology collective. We poke fun at terms like *web scale* and *the cloud* while also swearing by them in the same breath.
+Wobscale is a Seattle-based creative technology collective. We defy simple explanation, existing as both a parody of modern tech while simultaneously embodying it.
+
+We exist partially to poke fun at the industry, but also as a front for an eclectic collection of projects. We explicitly eschew making money in favor of having fun and working on things we care about.
 
 Join us on IRC at [#wob on irc.wobscale.website](ircs://irc.wobscale.website:6697/wob) or via our Matrix bridge at [#wob:wobscale.chat](https://matrix.to/#/#wob:wobscale.chat). **Participation is subject to our [code of conduct](/conduct.html).**
 
@@ -14,7 +16,7 @@ You can attempt to contact us at [contact@wobscale.website](mailto:contact@wobsc
 ## Projects
 
 [AS64241](https://as64241.net/)
-: An independent, multi-homed, [open peering](https://www.peeringdb.com/asn/64241) network connected with [SIX](https://www.seattleix.net/). (Ask us about colocation on peering!)
+: An independent, multi-homed, [open peering](https://www.peeringdb.com/asn/64241) network connected with [SIX](https://www.seattleix.net/). (Ask us about colocation or peering!)
 
 [komadori](https://github.com/wobscale/komadori)
 : Wobscale's account management service, with integration for OpenID Connect.
