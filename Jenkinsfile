@@ -30,10 +30,10 @@ node('docker') {
           -e AWS_SECRET_ACCESS_KEY="${AWS_SECRET_ACCESS_KEY}" \
           jess/awscli@sha256:a054249fa7b4247dee0dce965acc8444edeffe3ec4d310c8d5ce467deb139c3a \
           --region=us-west-2 \
-          s3 sync --acl public-read /site s3://wobscale-website-staging.wobscale.website/wobscale-website-stage-${BUILD_NUMBER}/
+          s3 sync --acl public-read /site s3://wobscale-website-staging.wobscale.website/wobscale-website-stage-${JOB_NAME}-${BUILD_NUMBER}/
       '''
 
-      githubNotify account: 'wobscale', credentialsId: '693f6ba4-ab12-4881-a3e3-7c7ce6bca7d2', description: 'staged', repo: 'wobscale.website', status: 'SUCCESS', targetUrl: "https://s3-us-west-2.amazonaws.com/wobscale-website-staging.wobscale.website/wobscale-website-stage-${env.BUILD_NUMBER}/index.html"
+      githubNotify account: 'wobscale', credentialsId: '693f6ba4-ab12-4881-a3e3-7c7ce6bca7d2', description: 'staged', repo: 'wobscale.website', status: 'SUCCESS', targetUrl: "https://s3-us-west-2.amazonaws.com/wobscale-website-staging.wobscale.website/wobscale-website-stage-${env.JOB_NAME}-${env.BUILD_NUMBER}/index.html"
     }
   }
 }
