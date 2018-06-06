@@ -1,0 +1,96 @@
+---
+---
+@charset "utf-8";
+
+body {
+    max-width: 70ch;
+    margin: 5em auto;
+    font-size: 14pt;
+    line-height: 1.5714;
+    font-family: "Lato", sans-serif;
+    font-variant-ligatures: none;
+
+    @media screen and (max-width: 767px) {
+        margin: 1em;
+        font-size: 12pt;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: underline;
+    color: rgb(0, 98, 155);
+}
+
+header {
+    h1 a img {
+        display: block;
+        width: 232px;
+        height: 39px;
+    }
+
+    .slogan {
+        font-family: "Rubik", sans-serif;
+        font-size: larger;
+    }
+}
+
+dl {
+    dt {
+        font-weight: bold;
+        display: inline-block;
+        min-width: 10ch;
+    }
+
+    dd {
+        display: inline;
+        margin: 0;
+
+        &:after {
+            display: block;
+            content: '';
+            margin-bottom: .75em;
+        }
+    }
+}
+
+footer {
+    font-size: smaller;
+    margin-top: 2rem;
+}
+
+@mixin font($path, $family, $weight, $style) {
+    @font-face {
+        font-family: $family;
+        font-weight: $weight;
+        font-style: $style;
+        src: url($path + ".woff2") format("woff2"),
+             url($path + ".woff") format("woff");
+    }
+}
+
+/*!
+ * Rubik
+ * Copyright 2015 The Rubik Project Authors (https://github.com/googlefonts/rubik),
+ *
+ * This Font Software is licensed under the SIL Open Font License, Version 1.1.    
+ * This license can be found at: fonts/rubik/OFL.txt or http://scripts.sil.org/OFL
+ */
+@include font("fonts/rubik/rubik-v7-latin-ext_latin-regular", "Rubik", 400, normal);
+
+/*!
+ * Lato
+ * Copyright (c) 2010-2015, Łukasz Dziedzic (dziedzic@typoland.com),
+ * with Reserved Font Name Lato.
+ *
+ * This Font Software is licensed under the SIL Open Font License, Version 1.1.    
+ * This license can be found at: fonts/lato/OFL.txt or http://scripts.sil.org/OFL
+ */
+@include font("fonts/lato/lato-v14-latin-ext_latin-regular", "Lato", 400, normal);
+@include font("fonts/lato/lato-v14-latin-ext_latin-italic", "Lato", 400, italic);
+@include font("fonts/lato/lato-v14-latin-ext_latin-700", "Lato", 700, normal);
+@include font("fonts/lato/lato-v14-latin-ext_latin-700italic", "Lato", 700, italic);

@@ -1,0 +1,26 @@
+{% assign lvl = page.url | append:'X' | split:'/' | size %}
+{% capture root %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wobscale</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ root }}site.css">
+        <link rel="icon" href="{{ root }}favicon.png">
+    </head>
+    <body>
+        <header>
+            <h1><a href="{{ root }}index.html"><img src="{{ root }}wobscale.svg" alt="Wobscale"></a></h1>
+            <p class="slogan">Scaling the Wob since <abbr title="Year of Our Lady of Discord">YOLD</abbr> 3182</p>
+        </header>
+
+{{ content }}
+
+        <footer>
+            <p>&copy; 2k18 Wobscale Technologies, LLC</p>
+        </footer>
+
+    </body>
+</html>
