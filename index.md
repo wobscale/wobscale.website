@@ -15,7 +15,7 @@ You can attempt to contact us at [contact@wobscale.website](mailto:contact@wobsc
 
 ## Projects
 
-[AS64241](https://as64241.net/)
+[AS64241](https://as64241.peeringdb.com/)
 : An independent, multi-homed, [open peering](https://www.peeringdb.com/asn/64241) network connected with [SIX](https://www.seattleix.net/). (Ask us about colocation or peering!)
 
 [komadori](https://github.com/wobscale/komadori)
