@@ -6,4 +6,4 @@ defaults:
 kramdown:
   show_warnings: true
   parse_block_html: true
-exclude: ["README.md", "COPYING", "Jenkinsfile"]
+exclude: ["README.md", "COPYING", "Jenkinsfile", ".bundle", "vendor"]
