@@ -7,8 +7,6 @@ Join us on IRC at [#wob on irc.wobscale.website](ircs://irc.wobscale.website:669
 
 We're inactive on Mastodon at [@wobscale@wobscale.social](https://wobscale.social/@wobscale).
 
-[**We have free stickers!**](https://stickers.wob.app/)
-
 You can attempt to contact us at [contact@wobscale.website](mailto:contact@wobscale.website). Please don't try to sell us things.
 
 ## Projects
